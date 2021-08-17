@@ -19,7 +19,7 @@ public class LoginStepDefinition{
 	
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
-	 System.setProperty("webdriver.chrome.driver","/Users/naveenkhunteta/Downloads/chromedriver");
+	 System.setProperty("webdriver.chrome.driver","D://GIT_Work_Space//Cucumber//Drivers//chromedriver.exe");
 	 driver = new ChromeDriver();
 	 driver.get("https://www.freecrm.com/index.html");
 	 }
@@ -31,10 +31,7 @@ public class LoginStepDefinition{
 	 System.out.println(title);
 	 Assert.assertEquals("Free CRM in the cloud software boosts sales", title);
 	 }
-	
-	 //Reg Exp:
-	 //1. \"([^\"]*)\"
-	 //2. \"(.*)\"
+
 	
 	 @Then("^user enters \"(.*)\" and \"(.*)\"$")
 	 public void user_enters_username_and_password(String username, String password){

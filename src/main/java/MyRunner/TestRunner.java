@@ -15,7 +15,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
         features = "src/main/java/Features",
         glue = {"stepDefinitions"},
-        tags = {"~@Ignore"},
+        //tags = {"~@Ignore"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
